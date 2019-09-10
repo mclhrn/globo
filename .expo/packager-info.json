@@ -1,9 +1,9 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 45404,
-  "expoServerNgrokUrl": "https://qu-hc2.anonymous.globo.exp.direct",
-  "packagerNgrokUrl": "https://packager.qu-hc2.anonymous.globo.exp.direct",
-  "ngrokPid": 45418
+  "expoServerPort": null,
+  "packagerPort": null,
+  "packagerPid": null,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null
 }

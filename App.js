@@ -1,13 +1,17 @@
+if (__DEV__) {
+  console.log('******************************** ---- __DEV__ ---- ********************************')
+  import('./ReactotronConfig').then(() => console.log('Reactotron Configured'))
+}
+
 import React from 'react';
 import { Home } from './app/views/Home.js';
 import { Contact } from './app/views/Contact.js';
 import { StackNavigator } from 'react-navigation';
+import { Video } from './app/views/Videos.js';
 
-// import { Video } from './app/views/Video.js';
 // import { VideoDetail } from './app/views/VideoDetail.js';
 // import { Register } from './app/views/Register.js';
 // import { Login } from './app/views/Login.js';
-
 
 const MyRoutes = StackNavigator({
   HomeRT: {
@@ -16,9 +20,9 @@ const MyRoutes = StackNavigator({
   ContactRT: {
     screen: Contact
   },
-  // LessonsRT: {
-  //   screen: Video
-  // },
+  LessonsRT: {
+    screen: Video
+  },
   // VideoDetailRT: {
   //   screen: VideoDetail
   // },
@@ -36,10 +40,6 @@ const MyRoutes = StackNavigator({
 
 export default class App extends React.Component {
   render() {
-    return (
-      <MyRoutes />
-    );
+    return (<MyRoutes />);
   }
 }
-
-
