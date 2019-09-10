@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { FlatList, Image, Text, TouchableWithoutFeedback, View } from 'react-native';
 import axios from 'axios';
@@ -98,6 +97,7 @@ export class Video extends React.Component {
 export class TubeItem extends React.Component {
 
   onPress = () => {
+    console.log('ID: ' + this.props.id);
     this.props.navigate('VideoDetailRT', { ytubeId: this.props.id });
   };
 

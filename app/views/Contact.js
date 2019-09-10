@@ -4,9 +4,11 @@ import { Header } from '../sections/Header.js';
 import { StackNavigator } from 'react-navigation';
 
 export class Contact extends React.Component {
+  
   static navigationOptions = {
     header: null
   };
+
   constructor(props) {
     super(props);
     this.state = {
@@ -26,6 +28,7 @@ export class Contact extends React.Component {
 
   render() {
     const { navigate } = this.props.navigation;
+
     return (
       <View style={styles.container}>
         <Header navigate={navigate} message='Press to Login' />
