@@ -53,8 +53,6 @@ export class Question extends React.Component {
             <TouchableHighlight underlayColor='#d3d3d3' onPress={() => this.chooseAnswer('answer4')}>
               <Text style={styles.answerText}>{this.props.answer4}</Text>
             </TouchableHighlight>
-
-
           </View>
         )}
         {this.state.selected && this.state.correct && (
